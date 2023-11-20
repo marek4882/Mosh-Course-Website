@@ -242,3 +242,22 @@ ul {
     font-size: 0.9375rem;
   }
 }
+
+/* Cards */
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+.card__header,
+.card__body {
+  padding: 1.25rem 1.875rem;
+}
+.card--primary .card__header {
+  background: var(--primary-color);
+  color: #fff;
+}
+.card--secondar .card__header {
+  background: var(--secondary-color);
+  color: #fff;
+}

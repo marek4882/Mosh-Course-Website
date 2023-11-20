@@ -15,7 +15,6 @@
 /* Typography */
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif, sans-serif;
-  font-family: "Red Hat Display", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
   color: var(--body-color);

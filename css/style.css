@@ -102,3 +102,30 @@ a {
     font-size: 0.75rem;
   }
 }
+
+/* Lists */
+ul {
+  list-style: none;
+  padding-left: 0;
+  color: var(--headings-color);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 1.25rem;
+}
+
+.list--tick {
+  list-style-image: url(../images/tick.svg);
+  padding-left: 1.875rem;
+}
+.list--tick .list__item {
+  padding-left: 0.3125rem;
+  margin-bottom: 0.625rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}

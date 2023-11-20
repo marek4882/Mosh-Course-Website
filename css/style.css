@@ -4,6 +4,8 @@
   --accent-color: #ff3400;
   --headings-color: #210e6b;
   --body-color: #918ca4;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::before,
@@ -212,13 +214,27 @@ ul {
 .input {
   font-size: 1.25rem;
   padding: 0.9375rem 2.1875rem;
-  border: 1px solid #ccc;
-  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
   outline: 0;
   color: var(--headings-color);
 }
 ::placeholder {
   color: #cdcbd7;
+}
+.input-group {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px 20px rgba(194, 196, 196, 0.26);
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 0.9375rem 0.625rem;
+}
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {

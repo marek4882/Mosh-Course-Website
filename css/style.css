@@ -4,6 +4,7 @@
   --accent-color: #ff3400;
   --headings-color: #210e6b;
   --body-color: #918ca4;
+  --body-darker-color: #5c5577;
   --border-color: #ccc;
   --border-radius: 30px;
 }
@@ -329,4 +330,46 @@ ul {
 }
 .media__image {
   margin-top: 0.625rem;
+}
+
+/* Quotes */
+.quote {
+  font-size: 1.875rem;
+  font-style: italic;
+  line-height: 1.2;
+  color: var(--body-darker-color);
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__author {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-style: normal;
+}
+.quote__organization {
+  color: var(--headings-color);
+  opacity: 0.4;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.qoute__line {
+  position: relative;
+  bottom: 10px;
+}
+
+@media screen and(min-width: 1024px) {
+  .quote {
+    font-size: 1.25rem;
+  }
+  .quote__author {
+    font-size: 1.5rem;
+  }
+  .quote__organization {
+    font-size: 1rem;
+  }
 }

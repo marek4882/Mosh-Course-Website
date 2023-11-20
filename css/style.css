@@ -5,3 +5,43 @@
   --headings-color: #210e6b;
   --body-color: #918ca4;
 }
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--body-color);
+}
+h1,
+h2,
+h3 {
+  color: var(--headings-color);
+  margin-bottom: 0.625rem;
+}
+h1 {
+  font-size: 4.375rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-wdith: 1024px) {
+  body {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -207,3 +207,22 @@ ul {
     font-size: 0.9375rem;
   }
 }
+
+/* Inputs */
+.input {
+  font-size: 1.25rem;
+  padding: 0.9375rem 2.1875rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  outline: 0;
+  color: var(--headings-color);
+}
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 0.9375rem;
+  }
+}

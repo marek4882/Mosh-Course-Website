@@ -178,7 +178,14 @@ ul {
   margin: 0.625rem 0;
   padding: 1.25rem 1.875rem;
   border: 0;
+  outline: 0;
   border-radius: 30px;
+}
+.btn .icon {
+  vertical-align: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
 }
 .btn--primary {
   background: var(--primary-color);
@@ -246,7 +253,7 @@ ul {
 .input-group .input {
   border: 0;
   flex-grow: 1;
-  padding: 0.9375rem 0.625rem;
+  padding: 0.9375rem 1.25rem;
 }
 .input-group .btn {
   margin: 4px;
@@ -608,5 +615,30 @@ ul {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain Block */
+.block-domain .input-group {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 2.5rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 3.75rem);
+  font-size: 1.25rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 }

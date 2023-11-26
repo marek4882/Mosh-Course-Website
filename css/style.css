@@ -13,6 +13,9 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* Typography */
 body {
   font-family: "Inter", Arial, Helvetica, sans-serif, sans-serif;
@@ -639,7 +642,6 @@ ul {
 /* Domain Block */
 .block-domain .input-group {
   box-shadow: 0 0 30px 20px #e6ebee;
-
   border: 0;
   margin: 2.5rem auto;
   max-width: 670px;
@@ -669,4 +671,26 @@ ul {
 .block-plans .card {
   max-width: 500px;
   margin: 0 auto;
+}
+
+/* Features */
+.feature {
+  margin: 4rem 0;
+  align-items: center;
+  gap: 2.5rem 1.25rem;
+}
+.feature:first-of-type {
+  margin-top: 3rem;
+}
+.feature__heading {
+  margin: 0.625rem 0;
+}
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }

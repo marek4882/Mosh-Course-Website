@@ -184,7 +184,7 @@ ul {
   white-space: nowrap;
   text-align: center;
   margin: 0.625rem 0;
-  padding: 1.25rem 1.875rem;
+  padding: 1.25rem 4vw;
   border: 0;
   outline: 0;
   border-radius: 30px;
@@ -262,8 +262,10 @@ ul {
   border: 0;
   flex-grow: 1;
   padding: 0.9375rem 1.25rem;
+  width: 0;
 }
 .input-group .btn {
+  z-index: 0;
   margin: 4px;
 }
 
@@ -655,13 +657,14 @@ ul {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 3.75rem);
   font-size: 1.25rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--headings-color);
 }
 
 @media screen and (min-width: 768px) {
